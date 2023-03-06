@@ -33,6 +33,7 @@ if uploaded_file is not None:
     for page in reader.pages:
         text += page.extract_text() + "\n"
 
+st.subheader("Summary:")
 def main(text):
     '''
     This function gets the user input, pass it to ChatGPT function and 
